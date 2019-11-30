@@ -13,4 +13,4 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
   - Define security groups corresponding to 3 instances 
 ## Step 1: Configuration of VPC, subnets and internet gateway (IGW)
 
-![alt text](http://url/to/img.png)
+![VPC](https://github.com/marcdime/aWS_NAT_instance/edit/master/instance.png)
