@@ -14,5 +14,4 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 ## Step 1: Configuration of VPC, subnets and internet gateway (IGW)
 
 markdown
-! [Test] (aWS_NAT_instance/instance.png)
-
+! [Test] (Instance.png)
