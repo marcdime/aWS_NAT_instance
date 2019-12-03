@@ -27,11 +27,22 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 	- Remarks : 
 		- NAT instance has a specific AMI 
 		
-		![ ](EC2_Instances.png)
+		
+			![ ](EC2_Instances.png)
+		
+		
 		
 		
 		- The Source/Dest of NAT instance must be disable
+				
 		
-		
-		![ ](source_dest.png)
+			![ ](source_dest.png)
+			
+## Step 2: SSHing to the jumpbox using client PUTTY
+
+- We have to convert the key .pem to .ppk using PUTTYGen
+
+- To hop to the Final instance, we use Pageant to enable SSH agent forwarding: launch Pageant -> Add key
+
+- Launch PUTTY : check box "Allow agent forwarding"
 		
