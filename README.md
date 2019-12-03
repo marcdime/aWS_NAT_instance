@@ -49,16 +49,15 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 	![ ](agent.png)
 	
 ...Access to jumpbox:
-
 	![_](jumpbox.png)
 	
-...Hopping to Final instance with command line : ssh ec2-user@[(private only) IP of Final instance]
-
+...Hopping to Final instance with command line : ssh ec2-user@(private only) IP of Final instance
 	![ ](hopping.png)
 	
 
 ## Step 3 : Let's ping google.com
 
-	![_](pinging.png)
+![_](pinging.png)
+	
 	
 		
