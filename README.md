@@ -30,9 +30,7 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 		
 			![ ](EC2_Instances.png)
 		
-		
-		
-		
+				
 		- The Source/Dest of NAT instance must be disable
 				
 		
@@ -46,14 +44,18 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 	
 
 - Launch PUTTY : check box "Allow agent forwarding"
+
 	![ ](IP_jumpbox.png)	
 	![ ](agent.png)
 	
 ...Access to jumpbox:
+
 	![_](jumpbox.png)
 	
 ...Hopping to Final instance with command line : ssh ec2-user@[(private only) IP of Final instance]
+
 	![ ](hopping.png)
+	
 
 ## Step 3 : Let's ping google.com
 
