@@ -20,13 +20,13 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 	- "Private_Final_instance" subnet is associated with the Route table "Main for private"
 	- The Route tables are defined as follows:
 	
-	![](Route Tables.png)
+	![ ](Route Tables.png)
 
 - For Instances: 
 	- Create "Jumpbox_instance" and "NAT_instance" associated with the public subnet.  The INBOUND security groups are set to SSH for the jumpbox (ssh) and ICMP for NAT instance (ping). 
 	- Remarks : 
 		- NAT instance has a specific AMI 
-		![](EC2_Instances)
+		![ ](EC2_Instances.png)
 		- The Source/Dest of NAT instance must be disable.
-		![](souce_dest)
+		![ ](source_dest.png)
 		
