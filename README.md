@@ -43,6 +43,20 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 - We have to convert the key .pem to .ppk using PUTTYGen
 
 - To hop to the Final instance, we use Pageant to enable SSH agent forwarding: launch Pageant -> Add key
+	
 
 - Launch PUTTY : check box "Allow agent forwarding"
+	![ ](IP_jumpbox.png)	
+	![ ](agent.png)
+	
+...Access to jumpbox:
+	![_](jumpbox.png)
+	
+...Hopping to Final instance with command line : ssh ec2-user@[(private only) IP of Final instance]
+	![ ](hopping.png)
+
+## Step 3 : Let's ping google.com
+
+	![_](pinging.png)
+	
 		
