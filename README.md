@@ -11,8 +11,15 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
   - Create 3 instances : jump_box (E1), NAT_instance located in S1 and final_instance (E2) located in S2
   - Implement two route tables: one connected to the internet gateway (for public subnet), one connected to the NAT instance (for private subnet)
   - Define security groups corresponding to 3 instances 
-## Step 1: Configuration of VPC, subnets and internet gateway (IGW)
+## Step 1: Configuration of subnets and EC2 Instance
 
 ![Configuration of the VPC](Instance.png)
+
+- For subnets:
+	- "Public_Jump_box" subnet is associated with the Route table "Costume for Public"
+	- "Private_Final_instance" subnet is associated with the Route table "Main for private"
+	- The Route tables are defined as follows:
+	
+	!
 
 
