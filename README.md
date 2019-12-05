@@ -1,8 +1,6 @@
 # aWS_NAT_instance
 Connecting to an EC2 in a private subnet and pinging around internet from this instance (no use of VPN)
 
- Based on https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html#NATSG
-
 ## Aim of the tutorial
 	
  One wants to create an instance EC2 in an private subnet, called E1, which can be accessed only by another instance, called E2, in a public subnet of the same VPC. This tutorial aims at pinging internet from E1 with help of a NAT instance that is located in the public subnet and plays a role as an outbound/inbound bridge of E1 with the internet. To this end, we need to:
@@ -20,21 +18,19 @@ Connecting to an EC2 in a private subnet and pinging around internet from this i
 	- "Private_Final_instance" subnet is associated with the Route table "Main for private"
 	- The Route tables are defined as follows:
 	
-	![ ](Route Tables.png)
+     ![ ](Route Tables.png)
 
 - For Instances: 
-	- Create "Jumpbox_instance" and "NAT_instance" associated with the public subnet.  The INBOUND security groups are set to SSH for the jumpbox (ssh) and ICMP for NAT instance (ping). 
+	- Create "Jumpbox_instance" and "NAT_instance" associated with the public subnet. The INBOUND security groups are set to SSH for the jumpbox (ssh) and ICMP for NAT instance (ping). 
 	- Remarks : 
 		- NAT instance has a specific AMI 
 		
-		
-			![ ](EC2_Instances.png)
+     ![ ](EC2_Instances.png)
 		
 				
 		- The Source/Dest of NAT instance must be disable
 				
-		
-			![ ](source_dest.png)
+     ![ ](source_dest.png)
 			
 ## Step 2: SSHing to the jumpbox using client PUTTY
 
